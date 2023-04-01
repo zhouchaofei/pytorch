@@ -23,7 +23,7 @@ for epoch in range(100):
         grad = gradient(x, y)
         w = w - 0.01 * grad
         l = loss(x, y)
-        print('\tgrad:', x, y, grad, l)
+        print('\tgrad:', x, y, grad, l, w)
 
     epoch_list.append(epoch)
     loss_list.append(l)
