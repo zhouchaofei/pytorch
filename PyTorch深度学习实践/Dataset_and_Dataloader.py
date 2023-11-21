@@ -44,6 +44,7 @@ optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
 
 if __name__ == '__main__':
     for epoch in range(10):
+        # enumerate(sequence, [start=0])
         for i, data in enumerate(train_loader, 0):
             inputs, labels = data
             y_pred = model(inputs)
