@@ -38,9 +38,9 @@ class DiabetsDataset(Dataset):
 
 def main(args):
     ''' Dataset'''
-    txt_paths = preprocess_data(args.train)
-    # txt_paths = [['/data/zcf/code/pytorch/d2l/predataset/14/107291.txt', '/data/zcf/code/pytorch/d2l/predataset/14/108376.txt', '/data/zcf/code/pytorch/d2l/predataset/14/109008.txt'],
-    #             ['/data/zcf/code/pytorch/d2l/predataset/14/124872.txt', '/data/zcf/code/pytorch/d2l/predataset/14/130618.txt', '/data/zcf/code/pytorch/d2l/predataset/14/131880.txt']]
+    # txt_paths = preprocess_data(args.train)
+    txt_paths = [['/data/zcf/code/pytorch/d2l/predataset/14/107291.txt', '/data/zcf/code/pytorch/d2l/predataset/14/108376.txt', '/data/zcf/code/pytorch/d2l/predataset/14/109008.txt'],
+                ['/data/zcf/code/pytorch/d2l/predataset/14/124872.txt', '/data/zcf/code/pytorch/d2l/predataset/14/130618.txt', '/data/zcf/code/pytorch/d2l/predataset/14/131880.txt']]
     # txt_paths = [['/data/zcf/code/pytorch/d2l/pretest/0/432590.txt', '/data/zcf/code/pytorch/d2l/pretest/0/432928.txt', '/data/zcf/code/pytorch/d2l/pretest/0/439847.txt'],
     #              ['/data/zcf/code/pytorch/d2l/pretest/1/603287.txt', '/data/zcf/code/pytorch/d2l/pretest/1/607171.txt', '/data/zcf/code/pytorch/d2l/pretest/1/607180.txt']]
     for id in range(len(txt_paths)):
